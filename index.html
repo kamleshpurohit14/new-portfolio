@@ -3,256 +3,380 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kamlesh Purohit | Portfolio</title>
+  <title>Kamlesh Purohit — Java Backend Developer</title>
+  <meta name="description" content="Kamlesh Purohit — B.Tech CSE (AI &amp; ML) student and Java backend developer. Building with Java, MySQL and the Spring ecosystem. Open to backend developer internships and entry-level roles.">
+  <meta name="theme-color" content="#0b1220">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Kamlesh Purohit — Java Backend Developer">
+  <meta property="og:description" content="B.Tech CSE (AI &amp; ML) student building with Java, MySQL and Spring. Open to backend developer internships.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="profile.jpg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-   <meta name="google-site-verification" content="Ez-YkgaHS7-5MHw4l5fUZu6_qybq-hBxrIrRb9TJgKU" />
-
+  <meta name="google-site-verification" content="Ez-YkgaHS7-5MHw4l5fUZu6_qybq-hBxrIrRb9TJgKU" />
 </head>
 
 <body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
   <!-- NAVBAR -->
   <nav class="navbar">
-    <ul class="nav-list">
-      <li><a href="#home" class="nav-link">Home</a></li>
-      <li><a href="#about" class="nav-link">About</a></li>
-      <li><a href="#education" class="nav-link">Education</a></li>
-      <li><a href="#Skills" class="nav-link">Skills</a></li>
-      <li><a href="#projects" class="nav-link">Projects</a></li>
-      <li><a href="#experience" class="nav-link">Experience</a></li>
-      <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
-      <li><a href="#certificates" class="nav-link">Certificates</a></li>
-      <li><a href="#contact" class="nav-link">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a href="#home" class="nav-brand">KP<span>.</span></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navList">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="nav-list" id="navList">
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#certificates" class="nav-link">Certificates</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
   <!-- HERO -->
   <header id="body-header">
-    <section id="home" class="hero-combined">
+    <section id="home" class="hero">
       <div class="hero-inner">
-        <div class="hero-left">
+        <div class="hero-left" data-animate>
+          <p class="hero-eyebrow">// java backend developer</p>
           <h1 class="hero-name">Kamlesh Purohit</h1>
-          <h3 class="hero-role">B.Tech CSE (AIML) · Java & Full‑Stack Developer</h3>
+          <p class="hero-role">B.Tech CSE (AI &amp; ML), Dev Bhoomi Uttarakhand University</p>
           <p class="hero-about">
-            Built Student Performance & Placement Tracker (Java + MySQL) and
-            AI Resume Analyzer (React). Passionate about clean code and
-            solving real‑world problems.
+            I build with Java, MySQL and the Spring Boot ecosystem, with a strong base in
+            OOP and DSA. Currently working on CareerForge, a Spring Boot backend, alongside
+            projects like a DSA Visualizer and console-based Java applications from my
+            internships. I care about clean, working code over flashy demos.
           </p>
 
-          <div class="hero-icons-row">
-            <a href="https://github.com/kamleshpurohit14" target="_blank" aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/kamlesh-purohit" target="_blank" aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-            <a href="https://www.instagram.com/mohit_purohit_400?igsh=eng3MWh5MGQzb3Bn"
-               target="_blank" aria-label="Instagram">
-              <i class="fa-brands fa-instagram"></i>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="YOUR_RESUME_LINK.pdf" class="btn btn-ghost" target="_blank" rel="noopener">
+              <i class="fa-solid fa-download"></i> Resume
             </a>
           </div>
 
-          <div class="hero-cta">
-            <a href="YOUR_RESUME_LINK.pdf" class="btn-secondary" target="_blank">
-              Download Resume
+          <div class="hero-badges">
+            <span class="hero-badge"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="hero-badge"><i class="fa-solid fa-leaf"></i> Spring Boot</span>
+            <span class="hero-badge"><i class="fa-solid fa-database"></i> MySQL</span>
+            <span class="hero-badge"><i class="fa-solid fa-diagram-project"></i> DSA</span>
+          </div>
+
+          <div class="hero-icons-row">
+            <a href="https://github.com/kamleshpurohit14" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/kamlesh-purohit" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="https://www.instagram.com/mohit_purohit_400?igsh=eng3MWh5MGQzb3Bn"
+               target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
             </a>
           </div>
         </div>
 
-        <div class="hero-right">
-          <img src="profile.jpg" alt="Kamlesh Purohit">
+        <div class="hero-right" data-animate>
+          <div class="hero-photo-frame">
+            <img src="profile.jpg" alt="Kamlesh Purohit" width="240" height="240">
+          </div>
+
+          <div class="hero-terminal" aria-hidden="true">
+            <div class="terminal-bar">
+              <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+              <span class="terminal-file">Developer.java</span>
+            </div>
+            <pre class="terminal-body"><code><span class="tk-kw">public class</span> <span class="tk-cls">Developer</span> {
+
+  <span class="tk-type">String</span> name = <span class="tk-str">"Kamlesh Purohit"</span>;
+  <span class="tk-type">String</span> role = <span class="tk-str">"Java Backend Developer"</span>;
+  <span class="tk-type">String</span>[] stack = {
+    <span class="tk-str">"Java"</span>, <span class="tk-str">"Spring Boot"</span>, <span class="tk-str">"MySQL"</span>
+  };
+}</code></pre>
+          </div>
         </div>
       </div>
     </section>
   </header>
 
-  <main>
+  <main id="main">
     <!-- ABOUT -->
     <section id="about" class="section">
-      <h2 class="section-title">About</h2>
+      <p class="section-eyebrow" data-animate>// about</p>
+      <h2 class="section-title" data-animate>About</h2>
 
-      <div class="about-grid">
-        <div class="about-text about-with-line">
+      <div class="about-grid" data-animate>
+        <div class="about-text">
           <p>
-            I enjoy building real‑world applications that actually help students and developers.
-            I like working with Java, MySQL and web technologies to create clean, maintainable solutions.
+            I enjoy building real-world applications that actually help students and developers.
+            I like working with Java, MySQL and the Spring Boot ecosystem to create clean, maintainable solutions.
           </p>
           <p>
-            Recently, I built a Student Performance & Placement Tracker using Java + MySQL and an
-            AI Resume Analyzer using React. I love learning new tools, contributing to projects and
-            improving a little every day.
+            Right now I'm building CareerForge, a Spring Boot backend for a placement platform, alongside
+            a DSA Visualizer and Java console projects from my internships. I love learning new tools, contributing
+            to projects and improving a little every day.
           </p>
 
           <ul class="about-facts">
-            <li><span>Location:</span> Dehradun, Uttarakhand, India</li>
-            <li><span>Education:</span> B.Tech CSE (AIML), DBUU</li>
-            <li><span>Interests:</span> Java, Web Dev, Cloud, Web3</li>
-            <li><span>Current Focus:</span> Building projects & improving DSA</li>
+            <li><span>Location</span>Dehradun, Uttarakhand, India</li>
+            <li><span>Education</span>B.Tech CSE (AIML), DBUU</li>
+            <li><span>Interests</span>Java, Web Dev, Cloud, Web3</li>
+            <li><span>Current focus</span>Building projects &amp; improving DSA</li>
           </ul>
         </div>
 
         <div class="about-stats">
           <div class="stat-card">
-            <span class="stat-number">03+</span>
-            <span class="stat-label">Major Projects</span>
+            <span class="stat-number">04</span>
+            <span class="stat-label">Projects</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">02</span>
             <span class="stat-label">Internships / Trainings</span>
           </div>
           <div class="stat-card">
-            <span class="stat-number">04+</span>
-            <span class="stat-label">Certificates & Workshops</span>
+            <span class="stat-number">10</span>
+            <span class="stat-label">Certificates &amp; Workshops</span>
           </div>
           <div class="stat-card">
             <span class="stat-number">Java</span>
-            <span class="stat-label">Primary Tech Stack</span>
+            <span class="stat-label">Primary Stack</span>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- EDUCATION -->
-    <section id="education" class="section">
-      <h2 class="section-title">Education</h2>
-
-      <div class="card edu-card">
-        <h3>B.Tech CSE (AIML)</h3>
-        <p class="meta">Dev Bhoomi Uttarakhand University · 2024 – Present</p>
-        <p>
-          Learning Data Structures, Java, DBMS, AI & ML and full‑stack development.
-          Building Java + React projects and exploring Blockchain & Web3.
-        </p>
-      </div>
-
-      <div class="card edu-card">
-        <h3>Diploma in Information Technology</h3>
-        <p class="meta">Govt Polytechnic Pitthuwala, Dehradun · 2021 – 2024</p>
-        <p>
-          CGPA 7.08. Worked on projects like Student Result Management System
-          and Personal Portfolio Website.
-        </p>
-      </div>
-
-      <div class="card edu-card">
-        <h3>Intermediate (12th)</h3>
-        <p class="meta">SGSVM Inter College, Dharampur · 2020 – 2021</p>
-        <p>Scored 74% with focus on Physics, Chemistry and Mathematics.</p>
-      </div>
-
-      <div class="card edu-card">
-        <h3>Matriculation (10th)</h3>
-        <p class="meta">Govt Inter College Bairaskund Chamoli · 2018 – 2019</p>
-        <p>Scored 70% with strong base in Science and Mathematics.</p>
       </div>
     </section>
 
     <!-- SKILLS -->
-   <section id="Skills" class="section">
-  <h2 class="section-title">Skills</h2>
+    <section id="skills" class="section">
+      <p class="section-eyebrow" data-animate>// skills</p>
+      <h2 class="section-title" data-animate>Skills</h2>
 
-  <div class="skills-chip-wrapper">
-    <div class="skill-chip">
-      <span class="skill-icon"><i class="fa-brands fa-java"></i></span>
-      <div>
-        <p class="skill-name">Java</p>
-        <p class="skill-level">Primary · Backend</p>
+      <div class="skills-grid" data-animate>
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-brands fa-java"></i> Programming</h3>
+          <ul class="skill-tags">
+            <li>Java</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-server"></i> Backend</h3>
+          <ul class="skill-tags">
+            <li>Spring Boot</li>
+            <li>Spring Data JPA</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-database"></i> Database</h3>
+          <ul class="skill-tags">
+            <li>MySQL</li>
+            <li>SQL</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-diagram-project"></i> Core Concepts</h3>
+          <ul class="skill-tags">
+            <li>OOP</li>
+            <li>DSA</li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-solid fa-code"></i> Frontend</h3>
+          <ul class="skill-tags">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JavaScript</li>
+            <li>React <span class="tag-note">learning</span></li>
+          </ul>
+        </div>
+
+        <div class="skill-group">
+          <h3 class="skill-group-title"><i class="fa-brands fa-git-alt"></i> Tools</h3>
+          <ul class="skill-tags">
+            <li>Git</li>
+            <li>GitHub</li>
+          </ul>
+        </div>
       </div>
-    </div>
-
-    <div class="skill-chip">
-      <span class="skill-icon"><i class="fa-solid fa-database"></i></span>
-      <div>
-        <p class="skill-name">MySQL</p>
-        <p class="skill-level">Database · Queries</p>
-      </div>
-    </div>
-
-    <div class="skill-chip">
-      <span class="skill-icon"><i class="fa-brands fa-html5"></i></span>
-      <div>
-        <p class="skill-name">HTML & CSS</p>
-        <p class="skill-level">Responsive UI</p>
-      </div>
-    </div>
-
-    <div class="skill-chip">
-      <span class="skill-icon"><i class="fa-brands fa-js"></i></span>
-      <div>
-        <p class="skill-name">JavaScript</p>
-        <p class="skill-level">Logic · DOM</p>
-      </div>
-    </div>
-
-    <div class="skill-chip">
-      <span class="skill-icon"><i class="fa-brands fa-react"></i></span>
-      <div>
-        <p class="skill-name">React (Learning)</p>
-        <p class="skill-level">Components · Hooks</p>
-      </div>
-    </div>
-  </div>
-</section>
-
+    </section>
 
     <!-- PROJECTS -->
     <section id="projects" class="section">
-      <h2 class="section-title">Projects</h2>
+      <p class="section-eyebrow" data-animate>// projects</p>
+      <h2 class="section-title" data-animate>Projects</h2>
 
-      <div class="card project-card">
-        <h3>Student Performance & Placement Tracker</h3>
-        <p class="meta">Java · MySQL · JDBC</p>
-        <p>
-          Java + MySQL console app to manage students, subjects, marks, percentage
-          and class topper.
-        </p>
-        <div class="project-actions">
-          <a href="https://github.com/kamleshpurohit14/CodeAlpha_StudentGradeTracker"
-             target="_blank" class="btn-small primary">View Code</a>
-        </div>
-      </div>
+      <div class="project-grid" data-animate>
+        <article class="project-card">
+          <div class="project-preview">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="preview-file">DsaVisualizer.jsx</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <span class="project-index">01</span>
+              <h3>DSA Visualizer</h3>
+              <span class="live-badge"><span class="live-dot"></span> Live</span>
+            </div>
+            <div class="project-tags">
+              <span>React</span><span>JavaScript</span><span>Vite</span>
+            </div>
+            <p>
+              Web-based visualizer that animates sorting algorithms — Bubble, Selection,
+              Insertion, Merge and Quick Sort — step by step, with algorithm selection
+              and speed control, to help students understand how each one works internally.
+            </p>
+            <div class="project-actions">
+              <a href="https://dsa-visualizer-weld.vercel.app/" target="_blank" rel="noopener" class="btn-small ghost">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo
+              </a>
+              <a href="https://github.com/kamleshpurohit14/DSA-Visualizer"
+                 target="_blank" rel="noopener" class="btn-small primary">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <div class="card project-card">
-        <h3>AI Resume Analyzer</h3>
-        <p class="meta">React · TypeScript · Tailwind</p>
-        <p>
-          React‑based mini‑project that compares resume with job description and
-          gives score & improvement suggestions.
-        </p>
-      </div>
+        <article class="project-card">
+          <div class="project-preview">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="preview-file">CareerForge.java</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <span class="project-index">02</span>
+              <h3>CareerForge</h3>
+              <span class="wip-badge">In Progress</span>
+            </div>
+            <div class="project-tags">
+              <span>Java 21</span><span>Spring Boot</span><span>Spring Data JPA</span><span>MySQL</span>
+            </div>
+            <p>
+              Backend foundation for a placement and career management platform, currently in
+              development. Set up with a Spring Boot 3.5 project structure, a JPA
+              <code>Student</code> entity and MySQL persistence configured via Spring Data JPA.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/kamleshpurohit14/CareerForge"
+                 target="_blank" rel="noopener" class="btn-small primary">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
 
-      <div class="card project-card">
-        <h3>Personal Portfolio Website</h3>
-        <p class="meta">HTML · CSS · JavaScript</p>
-        <p>
-          Responsive single‑page portfolio to showcase skills, education,
-          certificates and projects.
-        </p>
+        <article class="project-card">
+          <div class="project-preview">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="preview-file">SysslanLevel2.java</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <span class="project-index">03</span>
+              <h3>Sysslan Java Internship — Level 2</h3>
+            </div>
+            <div class="project-tags">
+              <span>Java</span><span>File I/O</span><span>Exception Handling</span>
+            </div>
+            <p>
+              Four console projects from a Java Development Internship at Sysslan IT
+              Solutions: a two-player Tic-Tac-Toe game with win/draw detection, a password
+              strength analyzer, a file encryption/decryption tool, and an expense tracker.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/kamleshpurohit14/sysslan-java-level-2"
+                 target="_blank" rel="noopener" class="btn-small primary">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="project-preview">
+            <span class="dot dot-red"></span><span class="dot dot-yellow"></span><span class="dot dot-green"></span>
+            <span class="preview-file">StudentGradeTracker.java</span>
+          </div>
+          <div class="project-card-body">
+            <div class="project-card-top">
+              <span class="project-index">04</span>
+              <h3>Student Grade Tracker</h3>
+            </div>
+            <div class="project-tags">
+              <span>Java</span><span>OOP</span><span>ArrayList</span>
+            </div>
+            <p>
+              Java console app built during the CodeAlpha Java Development Internship —
+              models each student as an object and stores records in an ArrayList,
+              calculating average, highest and lowest marks with a summary report.
+            </p>
+            <div class="project-actions">
+              <a href="https://github.com/kamleshpurohit14/CodeAlpha_StudentGradeTracker"
+                 target="_blank" rel="noopener" class="btn-small primary">
+                <i class="fa-brands fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
       </div>
     </section>
 
     <!-- EXPERIENCE -->
     <section id="experience" class="section">
-      <h2 class="section-title">Experience & Certifications</h2>
+      <p class="section-eyebrow" data-animate>// experience</p>
+      <h2 class="section-title" data-animate>Experience &amp; Training</h2>
 
-      <div class="timeline">
-        <div class="timeline-item left">
+      <div class="timeline" data-animate>
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
           <div class="timeline-content">
-            <h3>Java Development Intern – CodeAlpha</h3>
-            <p class="meta">Internship · 2025</p>
+            <h3>Java Development Intern — Sysslan IT Solutions</h3>
+            <p class="meta">Internship · Jul 2026 – Aug 2026</p>
             <ul class="exp-list">
-              <li>Built a Student Performance & Placement Tracker using Java, JDBC and MySQL.</li>
-              <li>Implemented menu‑driven console UI with full CRUD operations.</li>
-              <li>Added percentage & grade calculation and MySQL database integration.</li>
+              <li>Completed 8 Java console-based tasks across two internship levels, covering arrays, loops, conditionals, string handling and file I/O.</li>
+              <li>Built a two-player Tic-Tac-Toe game with win and draw detection using 2D arrays.</li>
+              <li>Developed a password strength analyzer and a file encryption/decryption tool using exception handling.</li>
+              <li>Built supporting utilities including a temperature converter, student grade average calculator and personal expense tracker.</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item right">
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-briefcase"></i></div>
           <div class="timeline-content">
-            <h3>Employability Skills Program – AWS (GICT)</h3>
+            <h3>Java Development Intern — CodeAlpha</h3>
+            <p class="meta">Internship · 2025</p>
+            <ul class="exp-list">
+              <li>Built a Student Grade Tracker in Java, modeling each student as an object using OOP.</li>
+              <li>Stored and managed multiple student records using an ArrayList.</li>
+              <li>Calculated average, highest and lowest marks with a console summary report.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-certificate"></i></div>
+          <div class="timeline-content">
+            <h3>Employability Skills Program — AWS (GICT)</h3>
             <p class="meta">Certification · Sep 2023 – Dec 2023</p>
             <ul class="exp-list">
               <li>Completed training focused on AWS core services and cloud computing concepts.</li>
@@ -262,111 +386,80 @@
           </div>
         </div>
 
-        <div class="timeline-item left">
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-code"></i></div>
           <div class="timeline-content">
-            <h3>Full Stack Web Development – Vervegen Tech</h3>
+            <h3>Full Stack Web Development — Vervegen Tech</h3>
             <p class="meta">Industrial Training · Jul 2023 – Aug 2023</p>
             <ul class="exp-list">
-              <li>Completed 4‑week industrial training on frontend and backend development.</li>
+              <li>Completed a 4-week industrial training on frontend and backend development.</li>
               <li>Practiced building responsive UIs and connecting them with databases.</li>
-              <li>Gained exposure to real‑world project structure and team workflows.</li>
+              <li>Gained exposure to real-world project structure and team workflows.</li>
             </ul>
           </div>
         </div>
 
-        <div class="timeline-item right">
+        <div class="timeline-item">
+          <div class="timeline-dot"><i class="fa-solid fa-link"></i></div>
           <div class="timeline-content">
-            <h3>Blockchain & Web3 Opensource Workshop</h3>
+            <h3>Blockchain &amp; Web3 Opensource Workshop</h3>
             <p class="meta">Workshop · DBUU · Feb 2025</p>
             <ul class="exp-list">
-              <li>Explored fundamentals of Blockchain, smart contracts and Web3 ecosystem.</li>
-              <li>Understood how decentralized applications (dApps) are designed and deployed.</li>
-              <li>Learned about open‑source contributions and career paths in Web3.</li>
+              <li>Explored fundamentals of blockchain, smart contracts and the Web3 ecosystem.</li>
+              <li>Learned how decentralized applications (dApps) are designed and deployed.</li>
+              <li>Learned about open-source contributions and career paths in Web3.</li>
             </ul>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- PORTFOLIO -->
-    <section id="portfolio" class="section">
-      <h2 class="section-title">Portfolio</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="section">
+      <p class="section-eyebrow" data-animate>// education</p>
+      <h2 class="section-title" data-animate>Education</h2>
 
-      <div class="portfolio-list">
-        <div class="portfolio-card">
-          <div class="portfolio-main">
-            <h3>Student Performance & Placement Tracker</h3>
-            <p class="meta">Java · MySQL · Console App</p>
-            <p>
-              Java + MySQL console app to manage students, subjects, marks, percentage and class topper.
-            </p>
-          </div>
-          <div class="portfolio-links-row">
-            <a href="https://github.com/kamleshpurohit14/CodeAlpha_StudentGradeTracker" target="_blank">
-              View Code
-            </a>
-          </div>
+      <div class="edu-grid" data-animate>
+        <div class="card edu-card">
+          <h3>B.Tech CSE (AIML)</h3>
+          <p class="meta">Dev Bhoomi Uttarakhand University · 2024 – Present</p>
+          <p>
+            Learning Data Structures, Java, DBMS, AI &amp; ML and full-stack development.
+            Building Java + React projects and exploring blockchain &amp; Web3.
+          </p>
         </div>
 
-        <div class="portfolio-card">
-          <div class="portfolio-main">
-            <h3>AI Resume Analyzer</h3>
-            <p class="meta">React · TypeScript · Tailwind</p>
-            <p>
-              React‑based mini project that compares resume with job description
-              and gives score & improvement suggestions.
-            </p>
-          </div>
-          <div class="portfolio-links-row">
-            <a href="https://github.com/kamleshpurohit14/CodeAlpha_AIChatbot" target="_blank">
-              View Code
-            </a>
-          </div>
+        <div class="card edu-card">
+          <h3>Diploma in Information Technology</h3>
+          <p class="meta">Govt Polytechnic Pitthuwala, Dehradun · 2021 – 2024</p>
+          <p>
+            CGPA 8.00. Worked on projects like Student Result Management System
+            and a personal portfolio website.
+          </p>
         </div>
 
-        <div class="portfolio-card">
-          <div class="portfolio-main">
-            <h3>AI Chatbot (Java)</h3>
-            <p class="meta">Java · Console Chatbot</p>
-            <p>
-              Simple AI chatbot built in Java as part of CodeAlpha internship, handling basic Q&amp;A from console.
-            </p>
-          </div>
-          <div class="portfolio-links-row">
-            <a href="https://github.com/kamleshpurohit14/CodeAlpha_AIChatbot" target="_blank">
-              View Code
-            </a>
-          </div>
+        <div class="card edu-card">
+          <h3>Intermediate (12th)</h3>
+          <p class="meta">SGSVM Inter College, Dharampur · 2020 – 2021</p>
+          <p>Scored 73.2%, with a focus on Physics, Chemistry and Mathematics.</p>
         </div>
 
-        <div class="portfolio-card">
-          <div class="portfolio-main">
-            <h3>Personal Portfolio Website</h3>
-            <p class="meta">HTML · CSS · JavaScript</p>
-            <p>
-              Responsive portfolio built with HTML, CSS and JavaScript to showcase skills,
-              education, certificates and projects.
-            </p>
-          </div>
-          <div class="portfolio-links-row">
-            <a href="https://kamleshpurohit14.github.io/Portfolio" target="_blank">
-              View Live
-            </a>
-            <a href="https://github.com/kamleshpurohit14/Portfolio" target="_blank">
-              View Code
-            </a>
-          </div>
+        <div class="card edu-card">
+          <h3>Matriculation (10th)</h3>
+          <p class="meta">Govt Inter College Bairaskund, Chamoli · 2018 – 2019</p>
+          <p>Scored 70%, with a strong base in Science and Mathematics.</p>
         </div>
       </div>
     </section>
 
     <!-- CERTIFICATES -->
     <section id="certificates" class="section">
-      <h2 class="section-title">Certificates</h2>
+      <p class="section-eyebrow" data-animate>// certificates</p>
+      <h2 class="section-title" data-animate>Certificates</h2>
 
-      <div class="cert-grid">
+      <div class="cert-grid" data-animate>
         <div class="cert-card">
-          <img src="aws-cert.jpg" alt="AWS Employability Skills Certificate">
+          <img src="aws-cert.jpg" alt="AWS Employability Skills Certificate" loading="lazy">
           <div class="cert-info">
             <h3>AWS Employability Skills Program</h3>
             <p class="meta">GICT · Sep 2023 – Dec 2023</p>
@@ -374,15 +467,15 @@
         </div>
 
         <div class="cert-card">
-          <img src="codealpha-cert.jpg" alt="CodeAlpha Java Internship Certificate">
+          <img src="codealpha-cert.jpg" alt="CodeAlpha Java Internship Certificate" loading="lazy">
           <div class="cert-info">
-            <h3>Java Development Intern – CodeAlpha</h3>
+            <h3>Java Development Intern — CodeAlpha</h3>
             <p class="meta">Internship Certificate · 2025</p>
           </div>
         </div>
 
         <div class="cert-card">
-          <img src="vervegen-cert.jpg" alt="Full Stack Web Development Training Certificate">
+          <img src="vervegen-cert.jpg" alt="Full Stack Web Development Training Certificate" loading="lazy">
           <div class="cert-info">
             <h3>Full Stack Web Development</h3>
             <p class="meta">Vervegen Tech · Jul 2023 – Aug 2023</p>
@@ -390,64 +483,110 @@
         </div>
 
         <div class="cert-card">
-          <img src="web3-cert.jpg" alt="Blockchain & Web3 Workshop Certificate">
+          <img src="web3-cert.jpg" alt="Blockchain and Web3 Workshop Certificate" loading="lazy">
           <div class="cert-info">
-            <h3>Blockchain & Web3 Workshop</h3>
+            <h3>Blockchain &amp; Web3 Workshop</h3>
             <p class="meta">DBUU · Feb 2025</p>
           </div>
         </div>
 
         <div class="cert-card">
-          <img src="azure-ai-cert.jpg" alt="Microsoft Certified: Azure AI Fundamentals">
+          <img src="azure-ai-cert.jpg" alt="Microsoft Certified Azure AI Fundamentals Certificate" loading="lazy">
           <div class="cert-info">
             <h3>Microsoft Certified: Azure AI Fundamentals</h3>
             <p class="meta">Microsoft · Issued Mar 2025</p>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-text">
+          <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="cert-info">
+            <h3>Software Engineering Job Simulation</h3>
+            <p class="meta">JPMorgan Chase · via Forage</p>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-text">
+          <div class="cert-icon"><i class="fa-solid fa-award"></i></div>
+          <div class="cert-info">
+            <h3>Advanced Software Engineering Job Simulation</h3>
+            <p class="meta">Walmart USA · via Forage</p>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-text">
+          <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="cert-info">
+            <h3>Java (Basic)</h3>
+            <p class="meta">HackerRank</p>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-text">
+          <div class="cert-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+          <div class="cert-info">
+            <h3>Placement Preparation Online Training Program</h3>
+            <p class="meta">CareerKunj · 35 hours</p>
+          </div>
+        </div>
+
+        <div class="cert-card cert-card-text">
+          <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="cert-info">
+            <h3>Oracle Java Foundations</h3>
+            <p class="meta">Oracle · MyLearn Oracle</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT -->
-  <section id="contact" class="section">
-  <h2 class="section-title">Contact</h2>
+    <section id="contact" class="section">
+      <p class="section-eyebrow" data-animate>// contact</p>
+      <h2 class="section-title" data-animate>Let's Build Something</h2>
+      <p class="section-subtitle" data-animate>Open to Java backend developer internships and entry-level roles — feel free to reach out.</p>
 
-  <div class="contact-card">
-    <!-- LEFT: form -->
-    <form action="https://formsubmit.co/kamleshpurohit034@gmail.com" method="POST" class="contact-form">
-      <input type="hidden" name="_captcha" value="false">
-      <input type="text" name="name" placeholder="Your Name" required>
-      <input type="email" name="email" placeholder="Your Email" required>
-      <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
-      <button type="submit">Send Message</button>
-    </form>
+      <div class="contact-card" data-animate>
+        <form action="https://formsubmit.co/kamleshpurohit034@gmail.com" method="POST" class="contact-form">
+          <input type="hidden" name="_captcha" value="false">
+          <label class="sr-only" for="cf-name">Your name</label>
+          <input id="cf-name" type="text" name="name" placeholder="Your name" required>
 
-    <!-- RIGHT: email/phone + icons -->
-    <div class="contact-main">
-      <p class="contact-line"><span>📧</span> kamleshpurohit034@gmail.com</p>
-      <p class="contact-line"><span>📱</span> 8267851101</p>
+          <label class="sr-only" for="cf-email">Your email</label>
+          <input id="cf-email" type="email" name="email" placeholder="Your email" required>
 
-      <div class="contact-social">
-        <a href="https://www.linkedin.com/in/kamlesh-purohit" target="_blank" aria-label="LinkedIn">
-          <i class="fa-brands fa-linkedin-in"></i>
-        </a>
-        <a href="https://github.com/kamleshpurohit14" target="_blank" aria-label="GitHub">
-          <i class="fa-brands fa-github"></i>
-        </a>
-        <a href="https://www.instagram.com/mohit_purohit_400?igsh=eng3MWh5MGQzb3Bn" target="_blank" aria-label="Instagram">
-          <i class="fa-brands fa-instagram"></i>
-        </a>
+          <label class="sr-only" for="cf-message">Your message</label>
+          <textarea id="cf-message" name="message" rows="4" placeholder="Your message" required></textarea>
+
+          <button type="submit">Send Message</button>
+        </form>
+
+        <div class="contact-main">
+          <div>
+            <p class="contact-line"><i class="fa-solid fa-envelope"></i> kamleshpurohit034@gmail.com</p>
+            <p class="contact-line"><i class="fa-solid fa-phone"></i> 8267851101</p>
+          </div>
+
+          <div class="contact-social">
+            <a href="https://www.linkedin.com/in/kamlesh-purohit" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/kamleshpurohit14" target="_blank" rel="noopener" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="https://www.instagram.com/mohit_purohit_400?igsh=eng3MWh5MGQzb3Bn" target="_blank" rel="noopener" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</section>
-
+    </section>
   </main>
 
   <!-- FOOTER -->
   <footer class="site-footer">
-    <div class="footer-line"></div>
     <p class="footer-text">
-      © 2025 Kamlesh Purohit · Built with <span>HTML</span>, <span>CSS</span> &amp; <span>JavaScript</span>
+      © 2026 Kamlesh Purohit · Built with HTML, CSS &amp; JavaScript
     </p>
   </footer>
 
